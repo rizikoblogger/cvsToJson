@@ -31,7 +31,7 @@ function converter(object) {
         headers.forEach(header=>{
             let atributo = _.camelCase(header)
             let conteudo = [obj[header]]
-            json+=(`${atributo}:'${conteudo}', `)
+            json+=(`${atributo}:'${conteudo}',`)
         })
 
         json+=json.trimEnd()+'},'
@@ -39,7 +39,9 @@ function converter(object) {
 
    json+= ']'
 
-    json = json.replace(',},','}')
+    json = json.replaceAll(',}','}')
+    json = json.replaceAll(',]',']')
+
 
     if(options.output){
       fs.writeFileSync(options.output, json, {encoding: 'utf-8', flag: 'w'})
@@ -67,7 +69,7 @@ if (options.file) {
     console.log('...Processing: ' + options.file)
     const file = fs.readFileSync(options.file, {})
     if (file) {
-        converter(Papa.parse(file.toString(), {delimiter: ',', skipEmptyLines: true, header: true}))
+        converter(Papa.parse(file.toString(), {skipEmptyLines: true, header: true}))
     } else {
         console.error('The file is not accept: ' + options.file)
     }
