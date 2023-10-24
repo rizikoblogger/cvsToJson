@@ -1,0 +1,16 @@
+{
+  "name": "cvstojson",
+  "version": "1.0.0",
+  "description": "Converts from CVS format to JSON",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "rogerio.fersan.dev@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^11.1.0",
+    "lodash": "^4.17.21",
+    "papaparse": "^5.4.1"
+  }
+}
