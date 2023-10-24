@@ -34,7 +34,7 @@ function converter(object) {
             json+=(`${atributo}:'${conteudo}',`)
         })
 
-        json+=json.trimEnd()+'},'
+        json+='},'
     })
 
    json+= ']'
