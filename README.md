@@ -1,2 +1,3 @@
-# cvsToJson
-Converts from CVS format to JSON
+# csvToJson
+
+Converts from CSV format to JSON

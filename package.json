@@ -1,7 +1,7 @@
 {
-  "name": "cvstojson",
+  "name": "csvtojson",
   "version": "1.0.0",
-  "description": "Converts from CVS format to JSON",
+  "description": "Converts from CSV format to JSON",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

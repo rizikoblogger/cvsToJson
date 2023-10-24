@@ -5,7 +5,7 @@ const fs = require('fs')
 const Papa = require('papaparse')
 const _ = require('lodash')
 
-const title = 'Converts from CVS format to JSON'
+const title = 'Converts from CSV format to JSON'
 
 function converter(object) {
 
