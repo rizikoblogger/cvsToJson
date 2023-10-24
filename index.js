@@ -71,7 +71,7 @@ if (options.file) {
     if (file) {
         converter(Papa.parse(file.toString(), {skipEmptyLines: true, header: true}))
     } else {
-        console.error('The file is not accept: ' + options.file)
+        console.error('The file format is not valid: ' + options.file)
     }
 } else {
     console.log(`
